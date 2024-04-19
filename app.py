@@ -1,6 +1,3 @@
-import sys
-
-sys.path.append('c:/users/as/appdata/local/programs/python/python312/lib/site-packages')
 
 from flask import Flask, render_template, request
 import os
@@ -63,6 +60,3 @@ def index():
         return render_template('result.html', result='Not Match')
 
     return render_template('index.html', error='')
-
-if __name__ == '__main__':
-    app.run(debug=True)
